@@ -1,0 +1,13 @@
+mysql.connector
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="1234",
+  database="mydatabase1"
+)
+
+mycursor = mydb.cursor()
+
+mycursor.execute("CREATE TABLE customers1 (name VARCHAR(255), address VARCHAR(255))")
+
